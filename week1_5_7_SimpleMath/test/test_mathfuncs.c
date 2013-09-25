@@ -26,11 +26,6 @@ END_TEST
 int main(int argc, const char *argv[])
 {
 	Suite *s = suite_create("Test");
-
-	tmc_register_test(s, test_sum_of_absolutes, "5.0");
-	tmc_register_test(s, test_sum_of_rounded, "5.0");
-	tmc_register_test(s, test_sum_of_characters, "5.0");
-	tmc_register_test(s, test_gcd, "6.0");
 	tmc_register_test(s, test_gcd_iterative, "7.0");
 
 	return tmc_run_tests(argc, argv, s);
