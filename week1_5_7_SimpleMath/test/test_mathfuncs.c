@@ -18,6 +18,7 @@ START_TEST(test_gcd_iterative)
   }
 	fail_unless(gcd_iterative(15, 20) == 5, "gcd_iterative(15, 20) should return 5");
 }
+END_TEST
 START_TEST(test_gcd_iterative2)
 {
   int *a = malloc(sizeof(unsigned long long int)* TIMES );
@@ -41,6 +42,7 @@ START_TEST(test_gcd_iterative3)
   }
   fail_unless(gcd_iterative(15, 20) == 5, "gcd_iterative(15, 20) should return 5");
 }
+END_TEST
 
 START_TEST(test_gcd_iterative4)
 {
@@ -53,6 +55,7 @@ START_TEST(test_gcd_iterative4)
   }
   fail_unless(gcd_iterative(15, 20) == 5, "gcd_iterative(15, 20) should return 5");
 }
+END_TEST
 
 int main(int argc, const char *argv[])
 {
